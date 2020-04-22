@@ -78,6 +78,8 @@ while True:
             break
     np = input('PC: Você deseja continuar? [S/N]: ').strip().upper()
     sleep(0.5)
+    while np not in 'SN' :
+        np = input('PC: Digite uma opção válida.\nPC: Você deseja continuar? [S/N]: ').strip().upper()
     if np in 'S':
             continue
     elif np in 'N':
@@ -99,5 +101,3 @@ while True:
             print('PC: Nós empatamos! Parece que nós dois somos muito bons, quero revanche hein.')
             jogofin()
             break 
-    while np not in 'SN' :
-        np = input('PC: Digite uma opção válida.\nPC: Você deseja continuar? [S/N]: ').strip().upper()
